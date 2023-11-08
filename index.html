@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{menuIsOpen: false}" class="{noscroll:menuIsOpen,}">
 
 <head>
   <meta charset="UTF-8" />
@@ -18,9 +18,15 @@
       display: grid;
       place-content: center;
     }
-    .header_menuBtn{
+
+    .header_menuBtn {
       position: relative;
       z-index: 10;
+    }
+
+    .noscroll,
+    .noscroll body {
+      overflow: hidden;
     }
   </style>
 </head>
@@ -33,8 +39,6 @@
       menu
     </button>
     <h1>Test de menu</h1>
-
-
     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
       <ul>
         <li><a href="#">item 1</a></li>
