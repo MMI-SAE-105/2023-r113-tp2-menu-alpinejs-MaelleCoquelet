@@ -56,15 +56,15 @@
     consectetur nobis enim.
   </p>
   <dl x-data="{loremDdIsOpen: false}">
-    <dt aria-controls="loremDd">Lorem.</dt>
+    <dt aria-controls="loremDd" @click="loremDdIsOpen = ! loremDdIsOpen">Lorem.</dt>
     <dd id="loremDd" x-show="loremDdIsOpen">Lorem ipsum dolor sit amet.</dd>
   </dl>
   <dl x-data="{architectoDdIsOpen: false}">
-    <dt aria-controls="architectoDd">Architecto.</dt>
+    <dt aria-controls="architectoDd" @click="architectoDdIsOpen = ! architectoDdIsOpen">Architecto.</dt>
     <dd id="architectoDd" x-show="architectoDdIsOpen">Quisquam, reprehenderit? Praesentium, deleniti harum.</dd>
   </dl>
   <dl x-data="{veritatisDdIsOpen: false}">
-    <dt aria-controls="veritatisDd">Veritatis?</dt>
+    <dt aria-controls="veritatisDd" @click="veritatisDdIsOpen = ! veritatisDdIsOpen">Veritatis?</dt>
     <dd id="veritatisDd" x-show="veritatisDdIsOpen">Perspiciatis, asperiores facilis! Odio, temporibus.</dd>
   </dl>
 </body>
