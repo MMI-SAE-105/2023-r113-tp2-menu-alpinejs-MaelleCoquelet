@@ -2,6 +2,11 @@
     content: url(../public/icones/ClarityHomeLine.svg);
 }
 
+img {
+    width: 500px;
+    height: auto;
+}
+
 .menu {
     position: fixed;
     top: 0;
