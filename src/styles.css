@@ -7,6 +7,14 @@ img {
     height: auto;
 }
 
+.returnDogs::before {
+    content: url(../public/icones/MdiDogSide.svg);
+}
+
+.returnCats::before{
+    content: url(../public/icones/FluentEmojiHighContrastBlackCat.svg);
+}
+
 .menu {
     position: fixed;
     top: 0;
