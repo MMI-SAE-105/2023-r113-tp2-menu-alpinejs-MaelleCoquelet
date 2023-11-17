@@ -17,15 +17,15 @@
     <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
       Menu
     </button>
-    <h1>Test de menu</h1>
     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
       <ul>
+        <li><a class="returnHome" href=".">Accueil</a></li>
         <li><a href="cats/index.html">Page Chats</a></li>
         <li><a href="dogs/index.html">Page Chiens</a></li>
-        <li><a href="#">item 3</a></li>
       </ul>
     </nav>
   </header>
+  <h1>Test de menu</h1>
   <!-- h2>lorem2^p>lorem -->
   <h2>Lorem, ipsum.</h2>
   <p>
