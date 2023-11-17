@@ -10,6 +10,18 @@
 </head>
 
 <body>
+    <header x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+            Menu
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a class="returnHome" href="../index.html">Accueil</a></li>
+                <li><a href="../cats/index.html">Page Chats</a></li>
+                <li><a href="../dogs/index.html">Page Chiens</a></li>
+            </ul>
+        </nav>
+    </header>
     <a href="index.html">Accueil Chiens</a>
     <img src="../public/img/dogs/chien_roux_riviere.jpg" alt="Image d'un chien roux">
 </body>
