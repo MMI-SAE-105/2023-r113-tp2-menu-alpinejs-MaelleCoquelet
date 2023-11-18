@@ -4,6 +4,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .returnHome::before {
     content: url(../public/icones/ClarityHomeLine.svg);
 }
