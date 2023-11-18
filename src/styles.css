@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
 .returnHome::before {
     content: url(../public/icones/ClarityHomeLine.svg);
 }
