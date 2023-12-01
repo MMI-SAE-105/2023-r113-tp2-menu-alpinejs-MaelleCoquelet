@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test menu</title>
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="../../src/styles.css">
+</head>
+
+<body>
+  <!-- https://emmet.io/ -->
+  <!-- header>h1{Test de menu} -->
+  <header x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+      Menu
+    </button>
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+      <ul>
+        <li><a class="returnHome" href="index.html">Accueil</a></li>
+        <li><a class="returnCats" href="cats/index.html">Page Chats</a></li>
+        <!--ol>li*2>a-->
+        <ol>
+          <li><a href="./cats/chat-1.html">Premier Chat</a></li>
+          <li><a href="./cats/chat-2.html">Deuxième Chat</a></li>
+        </ol>
+        <li><a class="returnDogs" href="dogs/index.html">Page Chiens</a></li>
+        <ol>
+          <li><a href="./dogs/chien-1.html">Premier Chien</a></li>
+          <li><a href="./dogs/chien-2.html">Deuxième Chien</a></li>
+        </ol>
+      </ul>
+    </nav>
+  </header>
+  <h1>Test de menu</h1>
+  <!-- h2>lorem2^p>lorem -->
+  <h2>Lorem, ipsum.</h2>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+    mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
+    nemo aliquid pariatur quam voluptates animi laudantium, aperiam
+    consectetur nobis enim.
+  </p>
+  <dl x-data="{loremDdIsOpen: false}">
+    <dt aria-controls="loremDd" @click="loremDdIsOpen = ! loremDdIsOpen">Lorem.</dt>
+    <dd id="loremDd" x-show="loremDdIsOpen">Lorem ipsum dolor sit amet.</dd>
+  </dl>
+  <dl x-data="{architectoDdIsOpen: false}">
+    <dt aria-controls="architectoDd" @click="architectoDdIsOpen = ! architectoDdIsOpen">Architecto.</dt>
+    <dd id="architectoDd" x-show="architectoDdIsOpen">Quisquam, reprehenderit? Praesentium, deleniti harum.</dd>
+  </dl>
+  <dl x-data="{veritatisDdIsOpen: false}">
+    <dt aria-controls="veritatisDd" @click="veritatisDdIsOpen = ! veritatisDdIsOpen">Veritatis?</dt>
+    <dd id="veritatisDd" x-show="veritatisDdIsOpen">Perspiciatis, asperiores facilis! Odio, temporibus.</dd>
+  </dl>
+</body>
+
+</html>
