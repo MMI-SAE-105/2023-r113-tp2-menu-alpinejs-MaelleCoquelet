@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil Chats</title>
+    <title>Document</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../../src/styles.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
                 <li><a class="returnHome" href="../index.html">Accueil</a></li>
-                <li><a class="returnCats" href="index.html">Page Chats</a></li>
+                <li><a class="returnCats" href="../cats/index.html">Page Chats</a></li>
                 <ol>
                     <li><a href="./chat-1.html">Premier Chat</a></li>
                     <li><a href="./chat-2.html">Deuxième Chat</a></li>
@@ -30,15 +30,8 @@
             </ul>
         </nav>
     </header>
-    <a class="returnHome" href="../index.html">Retour à l'Accueil du Site</a>
-    <ul>
-        <li>
-            <a href="chat-1.html">Voir le premier Chat</a>
-        </li>
-        <li>
-            <a href="chat-2.html">Voir le second Chat</a>
-        </li>
-    </ul>
+    <a class="returnCats" href="index.html">Accueil Chats</a>
+    <img src="../public/img/cats/domestic_black_cat_window.jpg" alt="Image d'un chat noir regardant par la fenêtre">
 </body>
 
 </html>
